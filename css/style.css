@@ -1,0 +1,324 @@
+/* !Import */
+@font-face {
+    font-family:'openR' ;
+    src: url(../fonts/OpenSans_Condensed-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family:'popSB';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-family: 600
+}
+@font-face {
+    font-family:'openBs';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+/* !Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+/* !Global Content */
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --white:hsl(99, 99%, 99%);
+}
+body{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    max-width:100%;
+}
+h2{
+    font-family:'popSB';
+    padding: 1em;
+}
+h2+p{
+    color: var(--Grayish-Blue);
+}
+.btn{
+    all: unset;
+    background-color: var(--Pink);
+    padding: 1em 2em;
+    border-radius:2em ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+/* !Body Content */
+/* ?========Start-Header======== */
+/* ====Header==== */
+header{
+    background: var(--Very-Pale-Cyan) url(../images/bg-hero-mobile.svg) no-repeat center/cover;
+    background-color: var(--Very-Pale-Cyan);
+    height: 100vh;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-gap: 4em;
+}
+/* ====Top-Navigation====  */
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.container nav img{
+    width: 35%;
+}
+.container nav button{
+    all: unset;
+    background-color: var(--white);
+    padding: 0.5em 1.5em;
+    border-radius:2em ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);
+}
+.container nav button span{
+    color: var(--Very-Dark-Cyan);
+    font-family:'openBs';
+}
+/* ====Header-Main-Content==== */
+.container .main-content .description h1{
+    font-family:'popSB';
+    font-size: 29px;
+    padding-bottom: 1em;
+}
+.container .main-content .description p{
+    color: var(--Very-Dark-Cyan);
+    /* font-size:20px ; */
+    padding-bottom: 2em;
+}
+.container .main-content .description .btn{
+    margin-bottom: 2em;
+}
+.container .main-content .description button span{
+    color: var(--white);
+    font-family:'popSB';
+}
+.container .main-content .description{
+    flex: 1;
+}
+.container .main-content .img-cont{
+    flex: 1;
+}
+
+/* ?========End-Header======== */
+
+
+/* ?========Start-Details-Section======== */
+/* Default-Card */
+.card{
+    display: flex;
+    gap: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 3em;
+    align-items: center;
+}
+.growTogether .container{
+    flex-direction: column-reverse;
+}
+.flowConversation .container{
+    flex-direction: column;
+}
+
+.yourUsers .container{
+    flex-direction: column;
+
+}
+/* ?========End-Details-Section======== */
+
+/* ?========Start-Community======== */
+.community{
+position: relative;
+z-index: 1;
+margin-bottom: -6em;
+margin-top: 6em;
+}
+.community  .container{
+    background-color: var(--white);
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.community .btn{
+    color: var(--white);
+    margin-bottom: 2em;
+}
+/* ?========End-Community======== */
+/* ?========Start-Footer======== */
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    text-align: start;
+
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10em;
+    padding-bottom: 3em;
+}
+/* ====Column 1==== */
+footer .col1 img{
+    filter: invert(1) brightness(100%) contrast(100%);
+}
+footer .col1 .contact-us p{
+    color: var(--white);
+    padding: 1em 0;
+}
+/* ====Column 2==== */
+footer  ul a {
+    color: var(--white);
+
+}
+footer  .col2 ul li ,
+.col3 ul li {
+    font-family:'openR' ;
+    padding: 0.5em 0;
+}
+/* ====Column 3=== */
+footer .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+footer .col4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+footer .col4 i {
+    position: relative;
+    color: var(--white);
+}
+footer .col4 i::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -11px;
+    left: -13px;
+    border: 0.1em solid var(--white);
+    border-radius: 50%;
+}
+
+.copy-right{
+    color: var(--white);
+    text-align: center;
+    margin-top: 2em;
+}
+.copy-right p{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/* !Media Query */
+/* Mobile: 320px - 480px */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 350px;     
+}
+}
+
+/* Tablet: 768px - 1024px */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 750px; 
+    }
+}
+
+/* Desktop: 1200px - 1440px */
+@media only screen and (min-width:992px ) {
+    .container {
+        width: 970px; 
+    }
+}
+
+/* Large Desktop: 1600px and above */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    .btn{
+        padding: 17px 64px;
+    }
+    .container nav img{
+        width: 20%;
+    }
+    .container nav{
+        padding: 3em 0;
+    }
+    .container .main-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+        gap:2em;
+    }
+    .container .main-content .description h1{
+        font-size: 35px;
+    }
+    .container .main-content .description h1{
+        padding-right: 100px;
+    }
+
+    
+    .growTogether .container{
+        flex-direction: row;
+    }
+    .flowConversation .container{
+        flex-direction: row;
+    }
+    
+    .yourUsers .container{
+        flex-direction: row-reverse;
+    
+    }
+
+    /* ====Footer==== */
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .container .col1{
+        max-width: 350px;
+        width: 100%;
+    }
+    footer .social-media{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-top: -2em;
+    }
+    
+}
